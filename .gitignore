@@ -22,4 +22,7 @@ Thumbs.db
 
 # API Keys
 *.env
-.env
+.envvenv/
+__pycache__/
+X_test.pkl feature_columns.pkl lgb_model.pkl lr_model.pkl rf_model.pkl y_test.pkl
+cache/
