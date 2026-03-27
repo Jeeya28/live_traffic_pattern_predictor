@@ -34,4 +34,3 @@ This project predicts traffic congestion levels based on real-time traffic data.
 
 ---
 
-## 📂 Project Structure
