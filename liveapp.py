@@ -56,6 +56,8 @@ LOCATION_COORDS = {
     "jayanagar": (12.9250, 77.5937),
     "m.g. road": (12.9762, 77.6033),
     "yeshwanthpur": (13.0280, 77.5380),
+    "skit college": (13.0694, 77.5000),
+    "rnsit college": (12.9011, 77.5180),
 }
 
 # TomTom flow API helper (keeps only flowSegmentData)
@@ -160,7 +162,7 @@ st.markdown("""
 st.markdown("""
     <div style='text-align: center; padding: 1.5rem; background: linear-gradient(90deg, #1e3a8a 0%, #3b82f6 100%); 
                 border-radius: 10px; margin-bottom: 2rem;'>
-        <h1 style='color: white; margin: 0;'>🚦 Smart Traffic Predictor + TomTom</h1>
+        <h1 style='color: white; margin: 0;'>🚦 Smart Traffic Predictor </h1>
         <p style='color: #e0e7ff; margin: 0.5rem 0 0 0;'>AI-Driven Forecasts + TomTom Live Data (Bengaluru)</p>
     </div>
 """, unsafe_allow_html=True)
@@ -247,7 +249,7 @@ st.markdown("---")
 # Sidebar Inputs (mirrors app.py)
 # ==============================
 st.sidebar.header("🔧 Prediction Controls")
-locations_list = ['Koramangala', 'Indiranagar', 'Hebbal', 'Jayanagar', 'M.G. Road', 'Whitefield', 'Yeshwanthpur']
+locations_list = ['Koramangala', 'Indiranagar', 'Hebbal', 'Jayanagar', 'M.G. Road', 'Whitefield', 'Yeshwanthpur', 'SKIT College', 'RNSIT College']
 source_input = st.sidebar.selectbox("🏁 Select Source", locations_list, index=0)
 destination_input = st.sidebar.selectbox("🎯 Select Destination", locations_list, index=1)
 
